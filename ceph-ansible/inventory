@@ -1,3 +1,9 @@
+[all:vars]
+ansible_port=22
+ansible_connection=ssh
+ansible_user=vagrant
+ansible_ssh_pass=vagrant
+
 [mons]
 ceph-mon1 
 ceph-mon2
@@ -10,12 +16,9 @@ ceph-osd3
 ceph-osd4
 
 [mgrs]
-ceph-mon1
+ceph-mon1 
 ceph-mon2
 ceph-mon3
 
-[all:vars]
-ansible_port=22
-ansible_connection=ssh
-ansible_user=vagrant
-ansible_ssh_pass=vagrant
+[monitoring]
+ceph-monitoring

@@ -20,6 +20,9 @@
     when: lvm_volumes | default([]) | length > 0
 
   - block:
+      - name: pip install pyyaml six
+        raw: pip3 install pyyaml six
+
       - name: look up for ceph-volume rejected devices
         ceph_volume:
           cluster: "{{ cluster }}"
