@@ -1,0 +1,22 @@
+########
+ansible.log
+
+# Gather cache #
+################
+.vagrant
+
+cache/*
+old_files/
+scripting/moveold.sh
+# Other #
+#########
+*.swp
+*.DS_Store
+*.vdi
+
+.mc.menu
+.idea
+.vscode
+
+cache-files/*
+my/*
